@@ -25,6 +25,9 @@ namespace thumbnailExtractor
         [STAThread]
         static void Main(string[] args)
         {
+            IFileObject file = new ExcelProcessor();
+            file.ImageFile(@"E:\ExcelExample.xlsx", @"E:\screenshotexc.png");
+            Console.ReadKey();
         }
     }
 }
